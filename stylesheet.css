@@ -1,0 +1,54 @@
+@font-face { font-family: Lexend; src: url('assets/lexend.ttf'); } 
+
+a:link, a:visited {
+    color: inherit;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-size: 50px;
+    width: 100vw;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 10px;
+    margin-top: 10vh;
+}
+
+.name>span {
+    font-size: 200px;
+    font-family: Lexend;
+    background: linear-gradient(130deg, #f3ec78, #af4261, blue);
+    background-size: 200% 200%;
+
+    animation: Animation 10s ease infinite;
+    -webkit-animation: Animation 10s ease infinite;
+    -moz-animation: Animation 10s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
