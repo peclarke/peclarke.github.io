@@ -37,6 +37,37 @@ a:link, a:visited {
     -moz-text-fill-color: transparent;
 }
 
+#landing {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#intro {
+    background-color: #FFDE21;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#intro>.content {
+    width: 50vw;
+}
+
+#intro>.content:first-child {
+    padding: 5em;
+}
+
+#intro>.content:last-child {
+    background-color: #ffe75e;
+}
+
+#intro>*>.title {
+    color: white;
+    font-family: Lexend;
+    font-size: 90px;
+    margin-left: -5px;
+}
+
 @-webkit-keyframes Animation {
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}
