@@ -37,6 +37,52 @@ a:link, a:visited {
     -moz-text-fill-color: transparent;
 }
 
+.circle {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right, #FFDE21, #ffe75e);
+    border-radius: 50%;
+    margin-left: -80px;
+    border: 2px solid white;
+}
+
+.circles {
+    width: 2vw;
+    z-index: 1;
+    margin-top: -10%;
+}
+
+#base>.circle:first-of-type {
+    background-image: linear-gradient(to bottom, white, #FFDE21);
+    /* border: 1px solid black; */
+}
+
+.circle:first-of-type {
+    cursor: pointer;
+}
+
+#super {
+    /* background-color: red; */
+    position: absolute;
+    top: 75%;
+    margin-top: 150px;
+    z-index: 99;
+    opacity: 0.5;
+}
+
+.profile {
+    width: 100vw;
+}
+
+.profile>img {
+    border-radius: 10% 50% 10% 50%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#intro>*>*>.subtitle {
+    font-size: 25px;
+}
+
 #landing {
     display: flex;
     justify-content: flex-start;
@@ -57,8 +103,18 @@ a:link, a:visited {
     padding: 5em;
 }
 
+#intro>.content:first-child>div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    /* background-color: #ffe659;
+    height: 97%; */
+}
+
 #intro>.content:last-child {
     background-color: #ffe75e;
+    z-index: 0;
 }
 
 #intro>*>.title {
@@ -66,6 +122,76 @@ a:link, a:visited {
     font-family: Lexend;
     font-size: 90px;
     margin-left: -5px;
+    /* stroke: 1px solid black; */
+    stroke: black;
+}
+
+.display {
+    background-color: rgb(63, 63, 63, 0.8);
+    width: 60%;
+    border-radius: 10px;
+    padding: 1em;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.688);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.display>*>*>a:link, .display>*>*>a:visited {
+    color: #c7c7ff;
+    text-decoration: underline;
+}
+
+.display>span {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.explainer {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.funfact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.funfact>.button {
+    opacity: 0.5;
+}
+
+.funfact>.button:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#down {
+    background-color: rgb(56,62,74);
+    color: white;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+    box-shadow: -3px 5px 5px 5px rgb(0 0 0 / 20%);
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#down:hover {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 @-webkit-keyframes Animation {
